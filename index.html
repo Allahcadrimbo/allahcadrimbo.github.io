@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="https://i.imgur.com/httf7Uu.jpg" type="image/*">
+    <link rel="icon" href="https://i.imgur.com/YQAqPk4.jpg" type="image/jpg">
 </head>
 
 <body>
@@ -20,238 +20,276 @@
         <div id="spinner"></div>
     </div>
 
-    <div id="profile">
-        <div id="profile_img" style="background: url(https://i.imgur.com/YQAqPk4.jpg) center;"></div>
-        <div id="username"><span style="display:block;">Grant Mitchell</span></div>
-        <div id="location"><span style="display:block;">Minnesota</span></div>
-        <div id="userbio" style="display: block;">Android Developer | Aspiring Software Engineer</div>
-        <div id="about">
-            <h3>Connect with me: </h3>
-            <a href="https://www.linkedin.com/in/g-m/" target="_blank" rel="noopener noreferrer">
-                <img src="images/li.png" style="width:40px; height:35px" title="LinkedIn" alt="linkedin" hspace="10">
-            </a>
-            <a href="https://github.com/Allahcadrimbo" target="_blank" rel="noopener noreferrer">
-                <img src="images/GitHub-Mark-Light-120px-plus.png" style="width:40px; height:40px" title="Github"
-                    alt="Github" hspace="10">
-            </a>
-            <a href="/contact.html">
-                <img src="images/send.png" target="_blank" rel="noopener noreferrer" style="width:40px; height:40px"
-                    title="Contact" alt="Contact" hspace="10">
-            </a>
+    <div class="nav-menu">
+        <div class="header"></div>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li>Grant Mitchell <span>Android Developer</span></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Projects</a></li>
+            </ul>
         </div>
+
     </div>
 
-    <div id="display">
-            <div class="navbar">
-                    <a href="#work">Projects</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#aboutme">About Me</a>
-                  </div>
-                  
-        <div id="aboutme">
-            <h1>About Me.</h1>
+    <div class="content">
 
-            <div class="projects" id="about_section">
-                <a href="https://onestop2.umn.edu/pcas/viewCatalogProgram.do?programID=439&strm=1189&campus=UMNDL"
-                    target="_blank" rel="noopener noreferrer" title="UMD's CS Curriculum">
-                    <section>
-                        <div class="section_title">Education</div>
-                        <div class="about_section">
-                            <span style="display:block;">Institution: University of Minnesota Duluth</span>
-                            <span style="display:block;">Major: Computer Science B.S.</span>
-                            <span style="display:block;">Minor: Mathematics</span>
-                            <span style="display:block;">Graduation: Fall 2019</span>
-                        </div>
-                    </section>
+        <div id="profile">
+            <div id="profile_img" style="background: url(https://i.imgur.com/YQAqPk4.jpg) center;"></div>
+            <div id="username"><span style="display:block;">Grant Mitchell</span></div>
+            <div id="location"><span style="display:block;">Minnesota</span></div>
+            <div id="userbio" style="display: block;">Android Developer | Aspiring Software Engineer</div>
+            <div id="about">
+                <h3>Connect with me: </h3>
+                <a href="https://www.linkedin.com/in/g-m/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/li.png" style="width:40px; height:35px" title="LinkedIn" alt="linkedin"
+                        hspace="10">
                 </a>
-
-                <a href="/testresume.pdf" target="_blank" rel="noopener noreferrer" title="Grant's Resume">
-                    <section>
-                        <div class="section_title">Resume</div>
-                        <div class="about_section">
-                            <span style="display:block;">Job Search Status: Open to opportunities</span>
-                            <br />
-                            <span style="display:block;">Willing to relocate: Yes</span>
-                            <br /> <br /> <br />
-                        </div>
-                    </section>
+                <a href="https://github.com/Allahcadrimbo" target="_blank" rel="noopener noreferrer">
+                    <img src="images/GitHub-Mark-Light-120px-plus.png" style="width:40px; height:40px" title="Github"
+                        alt="Github" hspace="10">
                 </a>
-
-                <a href="https://soundcloud.com/allahcadrimbo" target="_blank" rel="noopener noreferrer"
-                    title="Grant's Soundcloud">
-                    <section>
-                        <div class="section_title">Music</div>
-                        <div class="about_section">
-                            <span style="display:block;">Although I don't make music it is still a big part of my life.
-                                I always love discovering new music so feel free to share something you like!</span>
-                            <br />
-                            <span style="display:block;">Three of my favorite artists/groups: </span>
-                            <object><a href="https://soundcloud.com/danger-incorporated" style="color: inherit;"
-                                    target="_blank" rel="noopener noreferrer">Danger Incorporated</a></object>,
-                            <object><a href="https://soundcloud.com/spookycorbin" style="color: inherit;"
-                                    target="_blank" rel="noopener noreferrer">Corbin</a></object>, and
-                            <object><a href="https://soundcloud.com/lil_peep" style="color: inherit;" target="_blank"
-                                    rel="noopener noreferrer">Lil Peep</a></object>
-                            <br />
-                            <br />
-                            <span style="display:block;">Here is one song I've had on repeat lately:</span>
-                            <br />
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/595602228&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                        </div>
-                    </section>
-                </a>
-
-                <a href="https://highpointers.org/" target="_blank" rel="noopener noreferrer" title="Grant's Resume">
-                    <section>
-                        <div class="section_title">Highpointers Club</div>
-                        <div class="about_section">
-                            <span style="display:block;">A goal of mine is to complete as many of the U.S. highpoints as
-                                I can! Here is my progress thus far:</span>
-                            <br />
-                            <span style="display:block;">{HighPoint, State, Elevation (ft)}</span>
-                            <br />
-                            <span style="display:block;">Eagle Mountain, Minnesota, 2,301 </span>
-                            <br />
-                            <span style="display:block;">Hawkeye Point, Iowa, 1,670 </span>
-                            <br />
-                            <span style="display:block;">Black Elk Peak (Harney Peak), South Dakota, 7,242</span>
-                            <br />
-                        </div>
-                    </section>
+                <a href="/contact.html">
+                    <img src="images/send.png" target="_blank" rel="noopener noreferrer" style="width:40px; height:40px"
+                        title="Contact" alt="Contact" hspace="10">
                 </a>
             </div>
         </div>
 
-        <div id="experience">
-            <h1>Experience.</h1>
-            <div class="projects" id="experience_section">
-                <a href="https://mc-cubed.com" target="_blank" rel="noopener noreferrer">
-                    <section>
-                        <img src="images/mc3logo.png" style="height:120px; width:160px" align="right">
-                        <div class="section_title">MC-Cubed</div>
-                        <div class="about_section">
-                            <span style="display:block;">Application Developer II</span>
-                            <br />
-                            <span style="display:block;">While at MC-Cubed I have worked as the lead Android developer.
-                                I have worked with a handful of other developers on our flagship app Platonic, which you
-                                can
-                                learn more about a little furhter down!</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:block;">October 2018 - Present</span>
-                        </div>
-                    </section>
-                </a>
+        <div id="display">
 
-                <a href="https://animalallies.net" target="_blank" rel="noopener noreferrer">
-                    <section>
-                        <img src="images/aahs.jpg" style="height:100px; width:100px" align="right">
-                        <div class="section_title">Animal Allies Humane Society</div>
-                        <div class="about_section">
-                            <span style="display:block;">IT Support</span>
-                            <br />
-                            <span style="display:block;">At AAHS I do everthing from general user support to making sure
-                                the network is up and healthy.</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:block;">September 2018 - Present</span>
-                        </div>
-                    </section>
-                </a>
+            <div id="aboutme">
+                <h1>About Me.</h1>
 
-                <a href="https://www.stlouiscountymn.gov/" target="_blank" rel="noopener noreferrer">
-                    <section>
-                        <img src="images/slc.jpeg" style="height:100px; width:100px" align="right">
-                        <div class="section_title">St. Louis County</div>
-                        <div class="about_section">
-                            <span style="display:block;">IT Support Engineer Intern</span>
-                            <br />
-                            <span style="display:block;">At St. Louis County I did a variety of general It Support.
-                                However, my main assignment was to handle the PC lifecycle replacement of their Public
-                                Health and Human Services Department. While at SlC I imaged and deployed 120+
-                                computers.</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:block;">June 2018 - September 2018</span>
-                        </div>
-                    </section>
-                </a>
+                <div class="projects" id="about_section">
+                    <a href="https://onestop2.umn.edu/pcas/viewCatalogProgram.do?programID=439&strm=1189&campus=UMNDL"
+                        target="_blank" rel="noopener noreferrer" title="UMD's CS Curriculum">
+                        <section>
+                            <div class="section_title">Education</div>
+                            <div class="about_section">
+                                <span style="display:block;">Institution: University of Minnesota Duluth</span>
+                                <span style="display:block;">Major: Computer Science B.S.</span>
+                                <span style="display:block;">Minor: Mathematics</span>
+                                <span style="display:block;">Graduation: Fall 2019</span>
+                            </div>
+                        </section>
+                    </a>
 
-                <a href="http://www.d.umn.edu/academic-writing-and-learning-center/tutoring-center" target="_blank"
-                    rel="noopener noreferrer">
-                    <section>
-                        <img src="images/umd.png" style="height:100px; width:100px" align="right">
-                        <div class="section_title">UMD Tutoring Center</div>
-                        <div class="about_section">
-                            <span style="display:block;">Computer Science Tutor</span>
-                            <br />
-                            <span style="display:block;">At the tutoring center I tutored for Computer Science I & II,
-                                Software Analysis & Design, and Organization and Architecture. While here I became a
-                                CRLA certiefied tutor.</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:block;">January 2018 - December 2018</span>
-                        </div>
-                    </section>
-                </a>
+                    <a href="/testresume.pdf" target="_blank" rel="noopener noreferrer" title="Grant's Resume">
+                        <section>
+                            <div class="section_title">Resume</div>
+                            <div class="about_section">
+                                <span style="display:block;">Job Search Status: Open to opportunities</span>
+                                <br />
+                                <span style="display:block;">Willing to relocate: Yes</span>
+                                <br /> <br /> <br />
+                            </div>
+                        </section>
+                    </a>
 
+                    <a href="https://soundcloud.com/allahcadrimbo" target="_blank" rel="noopener noreferrer"
+                        title="Grant's Soundcloud">
+                        <section>
+                            <div class="section_title">Music</div>
+                            <div class="about_section">
+                                <span style="display:block;">Although I don't make music it is still a big part of
+                                    my
+                                    life.
+                                    I always love discovering new music so feel free to share something you
+                                    like!</span>
+                                <br />
+                                <span style="display:block;">Three of my favorite artists/groups: </span>
+                                <object><a href="https://soundcloud.com/danger-incorporated" style="color: inherit;"
+                                        target="_blank" rel="noopener noreferrer">Danger Incorporated</a></object>,
+                                <object><a href="https://soundcloud.com/spookycorbin" style="color: inherit;"
+                                        target="_blank" rel="noopener noreferrer">Corbin</a></object>, and
+                                <object><a href="https://soundcloud.com/lil_peep" style="color: inherit;"
+                                        target="_blank" rel="noopener noreferrer">Lil Peep</a></object>
+                                <br />
+                                <br />
+                                <span style="display:block;">Here is one song I've had on repeat lately:</span>
+                                <br />
+                                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/595602228&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                            </div>
+                        </section>
+                    </a>
+
+                    <a href="https://highpointers.org/" target="_blank" rel="noopener noreferrer"
+                        title="Grant's Resume">
+                        <section>
+                            <div class="section_title">Highpointers Club</div>
+                            <div class="about_section">
+                                <span style="display:block;">A goal of mine is to complete as many of the U.S.
+                                    highpoints as
+                                    I can! Here is my progress thus far:</span>
+                                <br />
+                                <span style="display:block;">{HighPoint, State, Elevation (ft)}</span>
+                                <br />
+                                <span style="display:block;">Eagle Mountain, Minnesota, 2,301 </span>
+                                <br />
+                                <span style="display:block;">Hawkeye Point, Iowa, 1,670 </span>
+                                <br />
+                                <span style="display:block;">Black Elk Peak (Harney Peak), South Dakota,
+                                    7,242</span>
+                                <br />
+                            </div>
+                        </section>
+                    </a>
+                </div>
             </div>
+
+            <div id="experience">
+                <h1>Experience.</h1>
+                <div class="projects" id="experience_section">
+                    <a href="https://mc-cubed.com" target="_blank" rel="noopener noreferrer">
+                        <section>
+                            <img src="images/mc3logo.png" style="height:120px; width:160px" align="right">
+                            <div class="section_title">MC-Cubed</div>
+                            <div class="about_section">
+                                <span style="display:block;">Application Developer II</span>
+                                <br />
+                                <span style="display:block;">While at MC-Cubed I have worked as the lead Android
+                                    developer.
+                                    I have worked with a handful of other developers on our flagship app Platonic,
+                                    which
+                                    you
+                                    can
+                                    learn more about a little furhter down!</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:block;">October 2018 - Present</span>
+                            </div>
+                        </section>
+                    </a>
+
+                    <a href="https://animalallies.net" target="_blank" rel="noopener noreferrer">
+                        <section>
+                            <img src="images/aahs.jpg" style="height:100px; width:100px" align="right">
+                            <div class="section_title">Animal Allies Humane Society</div>
+                            <div class="about_section">
+                                <span style="display:block;">IT Support</span>
+                                <br />
+                                <span style="display:block;">At AAHS I do everthing from general user support to
+                                    making
+                                    sure
+                                    the network is up and healthy.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:block;">September 2018 - Present</span>
+                            </div>
+                        </section>
+                    </a>
+
+                    <a href="https://www.stlouiscountymn.gov/" target="_blank" rel="noopener noreferrer">
+                        <section>
+                            <img src="images/slc.jpeg" style="height:100px; width:100px" align="right">
+                            <div class="section_title">St. Louis County</div>
+                            <div class="about_section">
+                                <span style="display:block;">IT Support Engineer Intern</span>
+                                <br />
+                                <span style="display:block;">At St. Louis County I did a variety of general It
+                                    Support.
+                                    However, my main assignment was to handle the PC lifecycle replacement of their
+                                    Public
+                                    Health and Human Services Department. While at SlC I imaged and deployed 120+
+                                    computers.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:block;">June 2018 - September 2018</span>
+                            </div>
+                        </section>
+                    </a>
+
+                    <a href="http://www.d.umn.edu/academic-writing-and-learning-center/tutoring-center" target="_blank"
+                        rel="noopener noreferrer">
+                        <section>
+                            <img src="images/umd.png" style="height:100px; width:100px" align="right">
+                            <div class="section_title">UMD Tutoring Center</div>
+                            <div class="about_section">
+                                <span style="display:block;">Computer Science Tutor</span>
+                                <br />
+                                <span style="display:block;">At the tutoring center I tutored for Computer Science I
+                                    &
+                                    II,
+                                    Software Analysis & Design, and Organization and Architecture. While here I
+                                    became a
+                                    CRLA certiefied tutor.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:block;">January 2018 - December 2018</span>
+                            </div>
+                        </section>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="work">
+                <h1>Projects.</h1>
+                <div class="projects" id="work_section">
+                    <a href="https://github.com/Allahcadrimbo/allahcadrimbo.github.io" target="_blank"
+                        rel="noopener noreferrer">
+                        <section>
+                            <div class="section_title">allahcadrimbo.github.io</div>
+                            <div class="about_section">
+                                <span style="display:block;">My personal website.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                    </a></div>
+            </div>
+
+            <div id="forks" style="display:none;">
+                <h1>Forks.</h1>
+                <div class="projects" id="forks_section"></div>
+            </div>
+
+            <div id="blog_section">
+                <h1>Blog.</h1>
+                <div id="blogs"></div>
+            </div>
+
+            <div id="footer">
+                <a href="https://github.com/imfunniee" target="_blank">Expanded from this human's work</a>
+                <br /> Mail icon made by <a href="https://www.flaticon.com/authors/popcorns-arts" title="Icon Pond">Icon
+                    Pond</a>
+                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                    target="_blank">CC 3.0 BY</a>
+            </div>
+
         </div>
 
-        <div id="work">
-            <h1>Projects.</h1>
-            <div class="projects" id="work_section">
-                <a href="https://github.com/Allahcadrimbo/allahcadrimbo.github.io" target="_blank"
-                    rel="noopener noreferrer">
-                    <section>
-                        <div class="section_title">allahcadrimbo.github.io</div>
-                        <div class="about_section">
-                            <span style="display:block;">My personal website.</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                        </div>
-                    </section>
-                </a></div>
-        </div>
-
-        <div id="forks" style="display:none;">
-            <h1>Forks.</h1>
-            <div class="projects" id="forks_section"></div>
-        </div>
-        <div id="blog_section">
-            <h1>Blog.</h1>
-            <div id="blogs"></div>
-        </div>
-        <div id="footer">
-            <a href="https://github.com/imfunniee" target="_blank">Expanded from this human's work</a>
-            <br /> Mail icon made by <a href="https://www.flaticon.com/authors/popcorns-arts" title="Icon Pond">Icon
-                Pond</a>
-            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                target="_blank">CC 3.0 BY</a>
-        </div>
-    </div>
-    <script type="text/javascript">
-        setTimeout(function () {
-            document.getElementById("loading").classList.add("animated");
-            document.getElementById("loading").classList.add("fadeOut");
+        <script type="text/javascript">
             setTimeout(function () {
-                document.getElementById("loading").classList.remove("animated");
-                document.getElementById("loading").classList.remove("fadeOut");
-                document.getElementById("loading").style.display = "none";
-            }, 800);
-        }, 1500);
-        $.getJSON("blog.json", function (blog) {
-            blog = blog || [];
-            if (blog.length == 0) {
-                return document.getElementById("blog_section").style.display = "none";
-            }
-            for (var i = 0; i < blog.length; i++) {
-                $("#blogs").append(`
+                document.getElementById("loading").classList.add("animated");
+                document.getElementById("loading").classList.add("fadeOut");
+                setTimeout(function () {
+                    document.getElementById("loading").classList.remove("animated");
+                    document.getElementById("loading").classList.remove("fadeOut");
+                    document.getElementById("loading").style.display = "none";
+                }, 800);
+            }, 1500);
+            $.getJSON("blog.json", function (blog) {
+                blog = blog || [];
+                if (blog.length == 0) {
+                    return document.getElementById("blog_section").style.display = "none";
+                }
+                for (var i = 0; i < blog.length; i++) {
+                    $("#blogs").append(`
             <a href="./blog/${blog[i].url_title}/" target="_blank">
                 <section>
                     <img src="${blog[i].top_image}">
@@ -264,20 +302,21 @@
                 </section>
             </a>
             `);
-            }
-        }).fail(function () {
-            return document.getElementById("blog_section").style.display = "none";
-        });
-    </script>
-
-    <script type="text/javascript">
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('service-worker.js');
+                }
+            }).fail(function () {
+                return document.getElementById("blog_section").style.display = "none";
             });
-        }
-    </script>
+        </script>
 
+        <script type="text/javascript">
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('service-worker.js');
+                });
+            }
+        </script>
+
+    </div>
 
 </body>
 
